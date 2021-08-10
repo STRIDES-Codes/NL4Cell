@@ -10,10 +10,11 @@ Recently there has been a paradigm shift in how people train and use language mo
 ### Single Cell Sequencing
 Single-cell RNA sequencing (scRNA-seq) allows us to view the gene expression profiles on an individual cellular basis. In short: we can look at *exactly* what genes a cell is using an how much it is using them. This has revolutionized the way we can study biology by being able to describe the activities and inner-workings of cells in an extremely high-resolution.
 
-There are too many applications of scRNA-seq to enumerate here (futher complicated by how rapidly the field is developing), but there numerous tasks and applications which allow us to gain valueable insight into how both healthy and diseased cells operate spanning domains from embrology to cancer to diabetes.
+There are too many applications of scRNA-seq to enumerate here (futher complicated by how rapidly the field is developing), but there numerous tasks and applications which allow us to gain valueable insight into how both healthy and diseased cells operate spanning applications from embrology to cancer to diabetes.
 
 ## What is NL4Cell?
-So what does natural language processing have to do with single-cell RNA sequencing?
+So what does natural language processing have to do with single-cell RNA sequencing? 
+
 
 
 ## How to use NL4Cell
