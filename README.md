@@ -12,11 +12,26 @@ Single-cell RNA sequencing (scRNA-seq) allows us to view the gene expression pro
 
 There are too many applications of scRNA-seq to enumerate here (futher complicated by how rapidly the field is developing), but there numerous tasks and applications which allow us to gain valueable insight into how both healthy and diseased cells operate spanning applications from embrology to cancer to diabetes.
 
-## What is NL4Cell?
+### What do they have to do with each other?
 So what does natural language processing have to do with single-cell RNA sequencing? 
 
+Imagine you have a document. That document is comprised of words which have relationships to each other and together form the meaning for the document. There are combinations of words that make sense, and those that don't. For example we could say, "the mouse eats cheese," and the words come together in a way that makes sense syntactically and logically. On the contrary we can also say "the ladder eats cheese" which doesn't logically make sense-- a ladder and cheese don't typically go together. Language models are able to tell what makes sense and what doesn't by learning from example and gaining a general "understanding" of a language.
 
+Now we can extend this concept to single cell data. Rather than a document comprised of words with lexical meaning, think about it in terms of a cell comprised of genes with biological meaning. We can reapply the same concepts from NLP to learn a new language, but rather than learning the meaning of words in a dictionary it learns the genes in a genome. Just as we could create a model that understands that "the mouse eats the cheese" makes more sense than "the ladder eats the cheese," we could create a model that can intuitively understand that a cell with `[CD4+, CD8-, CD20-]` makes a lot more sense than `[CD4+, CD8+, CD20+]`. This generalized understanding can then be applied towards any number of tasks just like one of the large pretrained models like GPT-3.
+
+## What is NL4Cell?
+NL4Cell is the...
 
 ## How to use NL4Cell
+
+
+### Installation
+```
+This is where the code will go for installing via pip/conda
+```
+### Example
+```
+This is where we will put a toy data example
+```
 
 ## Team
