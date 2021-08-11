@@ -35,4 +35,13 @@ This is where the code will go for installing via pip/conda
 This is where we will put a toy data example
 ```
 
+## Information
+
+### Preprocessing
+
+### Training
+
+### Inference
+
+
 ## Team
