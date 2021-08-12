@@ -30,6 +30,15 @@ Now we can extend this concept to single cell data. Rather than a document compr
 </details>
 
 ## Information
+### Preprocessing
+Two broad approaches were used to convert quantitative single cell expression data to text-based inputs for our models: binary and stratified approaches.
+#### Binary Discretization
+* Otsu's Method
+* Median Method
+#### Stratified Discretization
+* Gaussian Mixed Models
+* K-Means Clustering
+* Quantile-Based Discretization
 
 
 ### Models
