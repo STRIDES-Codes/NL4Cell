@@ -38,7 +38,6 @@ Several models, broadly divided into BERT-based and non-BERT-based models, were 
 * BERT
     * Released by Google in 2018
     * Uses the original transformer architecture from "Attention is All You Need"
-    * 
 * ALBERT/DistillBERT
     * Released in 2019
     * A light/smaller version of BERT that retains much of the language understanding while increasing speed
