@@ -7,7 +7,7 @@ NL4Cell is a modified natural language processing model that has learned the lan
 
 ## Background
 <details>
-<summary>Click for information on why this project exists!</summary>
+  <summary>Click for information on why this project exists!</summary>
   
 
 ### Natural Language Processing
@@ -31,14 +31,13 @@ Now we can extend this concept to single cell data. Rather than a document compr
 
 ## Information
 
-### Preprocessing
 
 ### Models
 Several models, broadly divided into BERT-based and non-BERT-based models, were trained, with unique learning objectives and protocols for each model.
 * BERT
     * Released by Google in 2018
     * Uses the original transformer architecture from "Attention is All You Need"
-* ALBERT/DistillBERT
+* ALBERT and DistillBERT
     * Released in 2019
     * A light/smaller version of BERT that retains much of the language understanding while increasing speed
 * RoBERTa
@@ -49,7 +48,6 @@ Several models, broadly divided into BERT-based and non-BERT-based models, were 
     * Completely different learning objective, using corruption rather than masking
     * Improved performance with less computing resources by learning from all tokens, rather than a subset of masked tokens
 All models were modified to remove positional embeddings, which are not needed for single cell data, as the sequence of gene tokens are not in any semantic order. In addition, the training objectives for BERT-based models were modified towards an ELECTRA-inspired adversarial model, randomly corrupting +/- values for a subset of gene markers to a neutral token, then predicting whether these tokens were + or -.
-
 
 ## How to use NL4Cell
 
@@ -71,6 +69,7 @@ To use with Colab, include the following line of code before importing the vario
 NL4Cell modifies the following model classes in the HuggingFace ```transformers``` package:
 * ```BertModel```
 * ```RobertaModel```
+* ```DistilBertForMaskedLM```
 * ```AlbertModel```
 * ```ElectraModel```
 
@@ -82,14 +81,11 @@ from transformers.data.data_collator import DataCollatorForNetutralCellModeling 
 
 
 ### Example
-```
-This is where we will put a toy data example
-```
-For more examples of training and fine-tuning models included in NL4Cell, please reference the following notebooks
+For examples of training and fine-tuning models included in NL4Cell, please reference the following notebooks
 * [End-to-End Tutorial](https://github.com/STRIDES-Codes/NL4Cell/blob/main/tutorials/NL4Cell_Tutorial.ipynb)
+* [Example: Training DistilBERT](https://colab.research.google.com/drive/1tU0ZF14NEGOXKcF6JJTGP2Q1HVuTLpcn#scrollTo=-_mKjdOV9UF8)
 * [Example: Training ALBERT](https://colab.research.google.com/drive/1N2hoGF6JqSN00tiYK7P3I8qqFuMNlkaK)
 * [Example: Training ELECTRA](https://colab.research.google.com/drive/1tRtoqW6jof0z8rkCqV5gud54xSm7aocZ?usp=sharing)
-
 
 ## Team
 **James Anibal** (Team Lead) \
