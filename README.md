@@ -50,6 +50,12 @@ This is where we will put a toy data example
 ### Preprocessing
 
 ### Training
+Several models were trained, each with their own goal and protocol.
+* BERT:
+* ALBERT:
+* RoBERT:
+* ...
+
 
 ### Inference
 
