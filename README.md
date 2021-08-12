@@ -70,15 +70,29 @@ To use with Colab, include the following line of code before importing the vario
 !pip install git+https://github.com/justinphan3110/transformers.git
 ```
 
-### Models
+### Models and Classes
 NL4Cell modifies the following model classes in the HuggingFace ```transformers``` package:
+* ```BertModel```
 * ```RobertaModel```
+* ```AlbertModel```
+* ```ElectraModel```
+* 
+Along with these models, we recommend the use of our modified Tokenizer and Data Collaters, which can be imported with the following
+```
+from transformers.models.bert.tokenization_bert import CellBertTokenizer # This imports the custom tokenizer, which is an extension of the BERT Tokenizer
+from transformers.data.data_collator import DataCollatorForNetutralCellModeling # This imports the custom Data Collater
+```
 
 
 ### Example
 ```
 This is where we will put a toy data example
 ```
+For more examples of training and fine-tuning models included in NL4Cell, please reference the following notebooks
+* [End-to-End Tutorial](https://github.com/STRIDES-Codes/NL4Cell/blob/main/tutorials/NL4Cell_Tutorial.ipynb)
+* [Example: Training ALBERT](https://colab.research.google.com/drive/1N2hoGF6JqSN00tiYK7P3I8qqFuMNlkaK)
+* [Example: Training ELECTRA](https://colab.research.google.com/drive/1tRtoqW6jof0z8rkCqV5gud54xSm7aocZ?usp=sharing)
+
 
 ## Team
 **James Anibal** (Team Lead) \
