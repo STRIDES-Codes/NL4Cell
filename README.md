@@ -76,7 +76,7 @@ NL4Cell modifies the following model classes in the HuggingFace ```transformers`
 * ```RobertaModel```
 * ```AlbertModel```
 * ```ElectraModel```
-* 
+
 Along with these models, we recommend the use of our modified Tokenizer and Data Collaters, which can be imported with the following
 ```
 from transformers.models.bert.tokenization_bert import CellBertTokenizer # This imports the custom tokenizer, which is an extension of the BERT Tokenizer
