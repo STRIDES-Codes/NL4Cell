@@ -49,12 +49,23 @@ This is where we will put a toy data example
 
 ### Preprocessing
 
-### Training
-Several models were trained, each with their own goal and protocol.
-* BERT:
-* ALBERT:
-* RoBERT:
-* ...
+### Models
+Several models, broadly divided into BERT-based and non-BERT-based models, were trained, with unique learning objectives and protocols for each model.
+* BERT
+    * Released by Google in 2018
+    * Uses the original transformer architecture from "Attention is All You Need"
+    * 
+* ALBERT/DistillBERT
+    * Released in 2019
+    * A light/smaller version of BERT that retains much of the language understanding while increasing speed
+* RoBERTa
+    * Released in 2019 by Facebook
+    * An extended version of BERT trained on 1000% more data, with modified learning objectives
+* ELECTRA
+    * Released in 2020 by Google and Stanford
+    * Completely different learning objective, using corruption rather than masking
+    * Improved performance with less computing resources by learning from all tokens, rather than a subset of masked tokens
+All models were modified to remove positional embeddings, which are not needed for single cell data, as the sequence of gene tokens are not in any semantic order. In addition, the training objectives for BERT-based models were modified towards an ELECTRA-inspired adversarial model, randomly corrupting +/- values for a subset of gene markers to a neutral token, then predicting whether these tokens were + or -.
 
 
 ### Inference
