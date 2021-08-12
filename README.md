@@ -94,6 +94,7 @@ For examples of training and fine-tuning models included in NL4Cell, please refe
 * [End-to-End Tutorial](https://github.com/STRIDES-Codes/NL4Cell/blob/main/tutorials/NL4Cell_Tutorial.ipynb)
 * [Example: Training DistilBERT](https://colab.research.google.com/drive/1tU0ZF14NEGOXKcF6JJTGP2Q1HVuTLpcn#scrollTo=-_mKjdOV9UF8)
 * [Example: Training ALBERT](https://colab.research.google.com/drive/1N2hoGF6JqSN00tiYK7P3I8qqFuMNlkaK)
+* [Example: Training RoBERTa](https://colab.research.google.com/drive/1ucWCKYwwO0ekASlVkzzTI_1SClsShqXH?usp=sharing)
 * [Example: Training ELECTRA](https://colab.research.google.com/drive/1tRtoqW6jof0z8rkCqV5gud54xSm7aocZ?usp=sharing)
 
 ## Team
