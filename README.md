@@ -45,11 +45,11 @@ This is where we will put a toy data example
 
 
 ## Team
-**James Anibal** (Team Lead)
-Runa Cheng
-Caitlin Corbin
-Caleb Grenko
-James Han
-Raina Kikani
-Long Phan
+**James Anibal** (Team Lead) \
+Runa Cheng \
+Caitlin Corbin \
+Caleb Grenko \
+James Han \
+Raina Kikani \
+Long Phan \
 Zhichao Wu
