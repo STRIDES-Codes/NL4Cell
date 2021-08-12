@@ -1,5 +1,5 @@
 # NL4Cell: Integrating NLP with single cell data analysis
-
+![NL4Cell](./images/banner.png)
 ## What is NL4Cell?
 NL4Cell is a modified natural language processing model that has learned the language of genes. This pretrained model can be applied towards any number of tasks pertaining to single cell RNA expression data.
 
