@@ -73,10 +73,10 @@ All models were modified to remove positional embeddings, which are not needed f
 
 ## Team
 **James Anibal** (Team Lead) \
+Long Phan (Tech Lead) \
 Runa Cheng \
 Caitlin Corbin \
 Caleb Grenko \
 James Han \
 Raina Kikani \
-Long Phan \
 Zhichao Wu
