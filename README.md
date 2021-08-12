@@ -29,25 +29,6 @@ Now we can extend this concept to single cell data. Rather than a document compr
 
 </details>
 
-## How to use NL4Cell
-
-
-### Installation
-
-Before installing the project, we recommend you check out <a href="https://colab.research.google.com/drive/1z0N8pN04WOuvCxl9lK2nArOafS6X6hpf?usp=sharing" target="_blank">the project on Google Collab!</a>
-
-
-To install locally, run the following code in your local terminal:
-```
-git clone https://github.com/STRIDES-Codes/NL4Cell-Integrating-NLP-with-single-cell-data-analysis.git
-...
-
-```
-### Example
-```
-This is where we will put a toy data example
-```
-
 ## Information
 
 ### Preprocessing
@@ -73,6 +54,31 @@ All models were modified to remove positional embeddings, which are not needed f
 
 ### Inference
 
+## How to use NL4Cell
+
+### Installation
+
+Before installing the project, we recommend you check out [the project on Google Collab](#Null)
+
+Installing NL4Cell is very straightforward – the models used in NL4Cell can be installed as an extension of the HuggingFace ```transformers``` package using ```pip```, through the following command:
+```
+pip install git+https://github.com/justinphan3110/transformers.git
+```
+
+To use with Colab, include the following line of code before importing the various models:
+```
+!pip install git+https://github.com/justinphan3110/transformers.git
+```
+
+### Models
+NL4Cell modifies the following model classes in the HuggingFace ```transformers``` package:
+* ```RobertaModel```
+
+
+### Example
+```
+This is where we will put a toy data example
+```
 
 ## Team
 **James Anibal** (Team Lead) \
