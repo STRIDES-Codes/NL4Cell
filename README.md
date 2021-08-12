@@ -31,14 +31,16 @@ Now we can extend this concept to single cell data. Rather than a document compr
 
 ## Information
 ### Preprocessing
-Two broad approaches were used to convert quantitative single cell expression data to text-based inputs for our models: binary and stratified approaches.
+
+Original gene expression data came in gene expression matrices in the form `num_cells × num_genes`. Two broad approaches were used to convert quantitative single cell expression data to text-based inputs for our models: binary and stratified approaches. A threshold was determined for every gene depending on the distribution of intensities unique to that gene across a data set.
+
 #### Binary Discretization
-* Otsu's Method
-* Median Method
+* Otsu's Method: create a histogram of the expression values for a gene across an entire set of data. Then perform an exhaustive search to determine a threshold that minimizes intra-class variance. Expression values below this threshold are considered negative (-), and expression values above this threshold are positive (+). Otsu's method is a popular computer vision technique to separate the foreground from the background in grayscale images.
+* Median Method: Find the median expression value for a gene across a dataset, use this as the threshold. Expression values below this threshold are considered negative (-), and expression values above this threshold are positive (+).
 #### Stratified Discretization
-* Gaussian Mixed Models
-* K-Means Clustering
-* Quantile-Based Discretization
+* Gaussian Mixed Models: fit an _n_-component Gaussian mixture model to the gene expression values across a data set. Sort the means of each distribution in increasing order, so that `distribution 0` has the least expression and `distribution 1` has the greatest.
+* K-Means Clustering: cluster the gene expression values across a data set into _k_ classes using k-means clustering. Sort the means of each class in increasing order, so that `cluster 0` has the least expression and `cluster 1` has the greatest.
+* Quantile-Based Discretization: user passes an array of quantiles (ex: `[25, 50, 75]` for quartiles), and each gene expression value is binned relative to the quantiles of that gene across the data set. 
 
 
 ### Models
