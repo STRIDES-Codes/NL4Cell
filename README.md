@@ -31,8 +31,14 @@ Now we can extend this concept to single cell data. Rather than a document compr
 
 
 ### Installation
+
+Before installing the project, we recommend you check out [the project on Google Collab](#Null)
+
+To install locally, run the following code in your local terminal:
 ```
-This is where the code will go for installing via pip/conda
+git clone https://github.com/STRIDES-Codes/NL4Cell-Integrating-NLP-with-single-cell-data-analysis.git
+...
+
 ```
 ### Example
 ```
