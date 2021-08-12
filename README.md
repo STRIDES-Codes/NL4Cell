@@ -100,7 +100,7 @@ For examples of training and fine-tuning models included in NL4Cell, please refe
 **James Anibal** (Team Lead) \
 Long Phan (Tech Lead) \
 Runa Cheng \
-Caitlin Corbin \
+Caitlin J. Corbin \
 Caleb Grenko \
 James Han \
 Raina Kikani \
