@@ -45,16 +45,16 @@ Original gene expression data came in gene expression matrices in the form `num_
 
 ### Models
 Several models, broadly divided into BERT-based and non-BERT-based models, were trained, with unique learning objectives and protocols for each model.
-* BERT
+* **BERT**
     * Released by Google in 2018
     * Uses the original transformer architecture from "Attention is All You Need"
-* ALBERT and DistillBERT
+* **ALBERT** and **DistillBERT**
     * Released in 2019
     * A light/smaller version of BERT that retains much of the language understanding while increasing speed
-* RoBERTa
+* **RoBERTa**
     * Released in 2019 by Facebook
     * An extended version of BERT trained on 1000% more data, with modified learning objectives
-* ELECTRA
+* **ELECTRA**
     * Released in 2020 by Google and Stanford
     * Completely different learning objective, using corruption rather than masking
     * Improved performance with less computing resources by learning from all tokens, rather than a subset of masked tokens
