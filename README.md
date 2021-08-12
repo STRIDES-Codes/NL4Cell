@@ -7,7 +7,7 @@ NL4Cell is a modified natural language processing model that has learned the lan
 
 ## Background
 <details>
-  <summary>Click for information on why this project exists!</summary>
+<summary>Click for information on why this project exists!</summary>
   
 
 ### Natural Language Processing
@@ -50,8 +50,6 @@ Several models, broadly divided into BERT-based and non-BERT-based models, were 
     * Improved performance with less computing resources by learning from all tokens, rather than a subset of masked tokens
 All models were modified to remove positional embeddings, which are not needed for single cell data, as the sequence of gene tokens are not in any semantic order. In addition, the training objectives for BERT-based models were modified towards an ELECTRA-inspired adversarial model, randomly corrupting +/- values for a subset of gene markers to a neutral token, then predicting whether these tokens were + or -.
 
-
-### Inference
 
 ## How to use NL4Cell
 
