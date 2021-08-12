@@ -32,7 +32,7 @@ Now we can extend this concept to single cell data. Rather than a document compr
 
 ### Installation
 
-Before installing the project, we recommend you check out [the project on Google Collab](#Null)
+Before installing the project, we recommend you check out [the project on Google Collab](https://colab.research.google.com/drive/1z0N8pN04WOuvCxl9lK2nArOafS6X6hpf?usp=sharing)
 
 To install locally, run the following code in your local terminal:
 ```
